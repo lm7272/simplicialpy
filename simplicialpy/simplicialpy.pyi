@@ -1,8 +1,6 @@
 from collections.abc import Iterable
-from typing import Optional, TypeVar
-
-Vertex = TypeVar("Vertex", int)
-Simplex = TypeVar("Simplex", list[Vertex])
+from typing import Optional
+from .types import Simplex, Vertex
 
 class SimplicialComplex:
     def __init__(self, facets: Iterable[Vertex]) -> None: ...

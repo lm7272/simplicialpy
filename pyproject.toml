@@ -13,3 +13,6 @@ classifiers = [
 dynamic = ["version"]
 [tool.maturin]
 features = ["pyo3/extension-module"]
+
+# Include pyi files in the package
+include = ["simplicialpy/*.pyi"]
