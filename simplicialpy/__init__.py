@@ -11,8 +11,8 @@ def simplicial_complex_from_xgi(sc: XGISimplicialComplex) -> SimplicialComplex:
     facets = [tuple(facet) for facet in mbrs]
     return SimplicialComplex(facets=facets)
 
-def clique_complex_from_iterable(cliques: Iterable[Iterable[int]]) -> SimplicialComplex:
-    return SimplicialComplex(facets=cliques)
+def clique_complex_from_iterable(facets: Iterable[Iterable[int]]) -> SimplicialComplex:
+    return SimplicialComplex(facets=facets)
 
 def clique_complex_from_nx(graph: Graph) -> SimplicialComplex:
     facets: list[list[int]] = list(find_cliques(graph))
