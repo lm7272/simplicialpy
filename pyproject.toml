@@ -11,6 +11,10 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dynamic = ["version"]
+description = "Simplicial topology python package built in Rust."
+license = "MIT"
+readme = "README.md"
+
 [tool.maturin]
 features = ["pyo3/extension-module"]
 

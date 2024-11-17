@@ -1,6 +1,5 @@
-use std::collections::HashSet;
-
 use pyo3::prelude::*;
+
 use simplicial_topology::simplicial_complex::simplicial_complex::SimplicialComplex;
 use simplicial_topology::simplicial_complex::simplex::{Simplex, Facet};
 
@@ -69,7 +68,7 @@ impl SimplicialComplexWrapper {
     }
 
     fn __repr__(&self) -> PyResult<String> {
-        Ok(format!("SimplicialComplex(Vertices: {:?}, Simplices: {:?})", self.k_faces(0), self.simplices()))
+        Ok(format!("SimplicialComplex(Vertices: {:?}, Facets: {:?})", self.k_faces(0), self.facets()))
     }
 
     fn compute_betti_number(&self, dimension: usize) -> i32 {
