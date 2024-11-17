@@ -15,6 +15,9 @@ description = "Simplicial topology python package built in Rust."
 license = "MIT"
 readme = "README.md"
 
+[project.urls]
+Homepage = "https://github.com/lm7272/simplicialpy"
+
 [tool.maturin]
 features = ["pyo3/extension-module"]
 
